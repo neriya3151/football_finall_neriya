@@ -1,0 +1,111 @@
+:root{
+    --glass-border: 2px solid white;
+    --glass-border-radius: 10px;
+    --glass-box-shadow: 2px 0 14px 1px #003f00;
+
+    --text-color: #194A03;
+    --text-shadow: 1px 1px 2px #003f00;
+}
+
+.App {
+    text-align: center;
+    background-image: url("../public/img_1.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+}
+
+.Title{
+    height: 10%;
+    width: 95%;
+    border: var(--glass-border);
+    box-shadow: var(--glass-box-shadow);
+    border-radius: var(--glass-border-radius);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.Label{
+    font-size: 25px;
+    font-weight: bold;
+}
+.Glass{
+    border: var(--glass-border);
+    box-shadow: var(--glass-box-shadow);
+    border-radius: var(--glass-border-radius);
+}
+
+.App,.Title, #main-container, #header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-container{
+    width: 100%;
+    height: 17%;
+    font-size: 20px;
+}
+
+#main-container{
+    width: 89%;
+    height: 95%;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: rgba(255,255,255,0.60);
+}
+
+#dashboard-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#sidebar-container, #other-sidebar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 10px;
+    height: 100%;
+    width: 19.8%;
+}
+
+#leagues-names-container{
+    width: 100%;
+    height: 20%;
+}
+
+#team-names-container {
+    width: 100%;
+    height: 90%;
+}
+
+#leagues-names-container, #team-names-container {
+    font-size: 20px;
+}
+
+#leagues-names-container >* {
+    text-align: left;
+}
+
+#content-container, #leagues-names-container, #team-container, #goals-mvp-container, #matches-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#content-container{
+    height: 100%;
+    width: 61%;
+    border-radius: 50px;
+    gap: 30px;
+}

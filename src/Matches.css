@@ -1,0 +1,21 @@
+.Matches{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#matches-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+#choose-round-label{
+    font-size: 18px;
+}
+#round-container{
+}
+
+table{
+    table-layout: auto;
+    text-align: center;
+}

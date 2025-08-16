@@ -1,0 +1,44 @@
+.Team{
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    flex-direction: column;
+}
+.Team,#team-upper-content-container,#team-lower-content-container,#team-matches-container,#team-players-container,#team-stats-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#team-upper-content-container {
+    border: 1px solid white;
+    flex-direction: row;
+    width: 95%;
+    height: 25%;
+    gap: 2%;
+}
+#team-players-container,#team-stats-container{
+    flex-direction: column;
+}
+#team-players-container{
+    width: 50%;
+    height: 100%;
+    font-size: 15px;
+}
+#team-stats-container{
+    width: 50%;
+    height: 100%;
+    font-size: 15px;
+}
+#team-lower-content-container{
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    height:80%;
+
+}
+#team-matches-container{
+    width: 95%;
+    height: 100%;
+
+}
